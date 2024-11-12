@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ @layer base {
+  button {
+    cursor: pointer;
+  }
+ }
+
+ @font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: url('../fonts/poppins-bold-webfont.woff2')  format('woff2'),
+       url('../fonts/poppins-bold-webfont.woff')  format('woff');
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Warning Toast */
+.Toastify__toast--warning {
+  background: #e7a62e !important; /* Yellow background */
+  color: #ffffff !important;      /* White text */
+}
+
+/* Toast Body */
+.Toastify__toast-body {
+  font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem !important;
+  font-weight: bold;
+  color: #ffffff !important;      /* White text */
+}
+
+/* Toast Progress Bar */
+.Toastify__toast-progress {
+  background: #333F48 !important;
+}
+
+/* Icon Color */
+.Toastify__toast-icon {
+  color: #ffffff !important; /* White icon color */
+}
+
+/* Error Toast */
+.Toastify__toast--error {
+  background: #e61317 !important; /* Red background */
+}
+
+/* Info Toast */
+.Toastify__toast--info {
+  background: #31a9f4 !important; /* Light blue background */
+  color: #ffffff !important;      /* White text */
+}
+
+/* Global Styles */
+body {
+  background: url('../public/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif; 
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.current-day {
+  background-color: #3ba7ff !important; 
+  color: black !important; 
+}
+
+.scroll-container {
+  scroll-behavior: smooth;
+}
+

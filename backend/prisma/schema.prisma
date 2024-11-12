@@ -1,0 +1,99 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Modele pour les patients
+model Patient {
+  id                Int      @id @default(autoincrement())
+  firstName         String
+  lastName          String
+  birthDate         DateTime
+  address           String?
+  appointments      Appointment[]
+  medicalRecords    MedicalRecord[]
+}
+
+// Modele pour les rendez-vous
+model Appointment {
+  id               Int      @id @default(autoincrement())
+  date             DateTime
+  startTime        DateTime
+  doctor           String
+  reason           String?
+  patient          Patient   @relation(fields: [patientId], references: [id])
+  patientId        Int
+}
+
+// Modele pour l'historique médical
+model MedicalRecord {
+  id                Int              @id @default(autoincrement())
+  date              DateTime
+  diagnosis         Diagnosis
+  treatment         Treatment
+  medication        Medication?
+  visitType         VisitType
+  bloodPressure     String?
+  heartRate         Int?
+  temperature       Float?
+  weight            Float?
+  height            Float?
+  notes             String
+  patient           Patient           @relation(fields: [patientId], references: [id])
+  patientId         Int
+}
+
+enum Diagnosis {
+  Hypertension
+  Diabetes
+  Asthma
+  Flu
+  Covid19
+  HeartDisease
+  Headache
+  Allergy
+  Gastroenteritis
+  Migraine
+  Other
+}
+
+enum Treatment {
+  Medication
+  Surgery
+  Therapy
+  LifestyleChange
+  FollowUp
+  Counseling
+  Rehabilitation
+  Other
+}
+
+enum Medication {
+  Antibiotics
+  Painkillers
+  Insulin
+  Inhalers
+  Antihypertensives
+  Antivirals 
+  Corticosteroids
+  Other
+}
+
+enum VisitType {
+  RoutineCheckUp
+  Consultation
+  BloodTest
+  Vaccination
+  Emergency
+  Specialist
+}
