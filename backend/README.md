@@ -1,5 +1,7 @@
 # Healthcare Backend API
 
+**Note:** For an overview of the entire project, including overall architecture, features, and a list of all technologies used, please see the main [README.md](../README.md) in the root directory.
+
 This project is a healthcare backend application built with NestJS. It provides RESTful API services for managing patients, medical records, and appointments. The application is structured to ensure modularity and scalability, with each major domain (Appointment, Medical Record, Patient) having its own module, controller, and service.
 
 ## Project Structure

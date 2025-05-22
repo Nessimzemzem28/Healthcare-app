@@ -1,5 +1,7 @@
 # Healthcare Frontend Application
 
+**Note:** For an overview of the entire project, including overall architecture, features, and a list of all technologies used, please see the main [README.md](../README.md) in the root directory.
+
 This project is the frontend part of a healthcare application built with Next.js. It provides an interface for managing appointments, medical records, and patient information. The frontend communicates with the backend API (NestJS) using Axios for data fetching.
 
 ## Project Structure

@@ -18,6 +18,30 @@ This repository contains both the frontend and backend projects for a comprehens
 
 ---
 
+## 🚀 Technologies Used
+
+### Backend
+
+- ![NestJS](https://img.shields.io/badge/NestJS-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
+- ![Prisma](https://img.shields.io/badge/Prisma-%232D3748.svg?style=for-the-badge&logo=prisma&logoColor=white)
+- ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+- ![JWT](https://img.shields.io/badge/JWT-%23000000.svg?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+- ![Swagger](https://img.shields.io/badge/Swagger-%2385EA2D.svg?style=for-the-badge&logo=swagger&logoColor=black)
+
+### Frontend
+
+- ![Next.js](https://img.shields.io/badge/Next.js-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white)
+- ![React](https://img.shields.io/badge/React-%2320232A.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+- ![Material-UI (MUI)](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
+- ![Axios](https://img.shields.io/badge/Axios-%235A29E4.svg?style=for-the-badge&logo=axios&logoColor=white)
+- ![Formik](https://img.shields.io/badge/Formik-%230052CC.svg?style=for-the-badge&logo=formik&logoColor=white)
+- Yup
+- Recharts
+
+---
+
 ## ⚙️ Setup Instructions
 
 
@@ -64,3 +88,9 @@ This repository contains both the frontend and backend projects for a comprehens
     ```bash
         npm run dev
     ```
+
+---
+
+## 🙏 Contributing
+
+Contributions are welcome! Please feel free to open an issue or submit a pull request.
